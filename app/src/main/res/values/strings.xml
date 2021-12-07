@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RentApp</string>
+    <string name="add_house">Registrar Casa</string>
+    <string name="edit_house">Editar Casa</string>
+    <string name="edit_profile">Editar Perfil</string>
+    <string name="log_out">Cerrar Sesion</string>
+
 </resources>

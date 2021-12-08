@@ -7,13 +7,6 @@
     android:background="@color/alice_blue"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/dark_blue_grey"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/anti_flash_white"
-        app:menu="@menu/menu_toolbar" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         style="@style/BottomNavigation"

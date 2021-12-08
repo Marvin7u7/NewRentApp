@@ -4,5 +4,9 @@
     <string name="edit_house">Mis Casas</string>
     <string name="edit_profile">Mi Perfil</string>
     <string name="log_out">Cerrar Sesión</string>
+    <string name="rentapp_author">by Jon Areas</string>
+    <string name="rentapp_title">RentApp</string>
+    <string name="settings">Ajustes</string>
+    <string name="about">Acerca de</string>
 
 </resources>

@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.RentApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.RentApp" parent="Theme.Material3.DayNight">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/cerulean</item>
         <item name="colorPrimaryVariant">@color/cerulean_dark</item>

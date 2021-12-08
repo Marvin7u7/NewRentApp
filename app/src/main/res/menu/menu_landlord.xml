@@ -15,5 +15,10 @@
         android:icon="@drawable/ic_user"
         android:title="@string/edit_profile" />
 
+    <item
+        android:id="@+id/log_out"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"/>
+
 
 </menu>

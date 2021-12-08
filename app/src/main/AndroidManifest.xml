@@ -11,6 +11,7 @@
         android:theme="@style/Theme.RentApp">
         <activity
             android:name=".splash.SplashActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

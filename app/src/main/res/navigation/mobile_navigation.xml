@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/add_house">
+
+    <fragment
+        android:id="@+id/add_house"
+        android:name="com.jonareas.rentapp.ui.AddHouseFragment"
+        android:label="fragment_add_house"
+        tools:layout="@layout/fragment_add_house" />
+    <fragment
+        android:id="@+id/edit_house"
+        android:name="com.jonareas.rentapp.ui.EditHouseFragment"
+        android:label="fragment_edit_house"
+        tools:layout="@layout/fragment_edit_house" />
+    <fragment
+        android:id="@+id/edit_profile"
+        android:name="com.jonareas.rentapp.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.jonareas.rentapp.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

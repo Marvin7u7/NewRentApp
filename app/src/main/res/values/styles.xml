@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Input Layout Default  -->
+    <style name="TextInputLayoutDefault" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_standard</item>
+        <item name="android:textColorHint">?attr/colorAccent</item>
+        <item name="android:gravity">top</item>
+        <item name="endIconTint">?attr/colorPrimaryVariant</item>
+        <item name="boxStrokeWidth">@dimen/none</item>
+    </style>
+    <!-- Edit Text Default  -->
+    <style name="EditTextDefault" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_edit_text_size</item>
+        <item name="android:layout_marginStart">@dimen/margin_high</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginEnd">@dimen/margin_high</item>
+        <item name="android:background">@drawable/round_border</item>
+        <item name="android:padding">@dimen/padding_standard</item>
+        <item name="android:drawablePadding">@dimen/padding_standard</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_standard</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="maxLines">1</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColorHint">?attr/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- TextView Default  -->
+    <style name="TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_high</item>
+        <item name="android:layout_marginStart">@dimen/margin_high</item>
+        <item name="android:layout_marginEnd">@dimen/margin_high</item>
+        <item name="fontFamily">@font/raleway</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+    </style>
+    <!-- TextView for Display -->
+    <style name="TextViewDisplay" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_high</item>
+        <item name="android:layout_marginEnd">@dimen/margin_high</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_small</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    <!-- Button Default  -->
+    <style name="ButtonDefault" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/login_edit_text_size</item>
+        <item name="android:layout_marginStart">@dimen/margin_high</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_marginEnd">@dimen/margin_high</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_high</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+    </style>
+    <!-- Bottom Navigation Bar. -->
+    <style name="BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/dark_blue_grey</item>
+        <item name="itemIconTint">@color/bottom_nav_text_color</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavigation.ActiveItemTextAppearance</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavigation.InactiveItemTextAppearance</item>
+        <item name="itemTextColor">@color/bottom_nav_text_color</item>
+        <item name="paddingStart">@dimen/padding_toolbar</item>
+        <item name="paddingEnd">@dimen/padding_toolbar</item>
+
+    </style>
+    <!-- Bottom Navigation (In)Active Text Appearance. -->
+    <style name="BottomNavigation.ActiveItemTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/palanquin_dark</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="BottomNavigation.InactiveItemTextAppearance" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/palanquin</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

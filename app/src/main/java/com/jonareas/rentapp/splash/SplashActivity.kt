@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.jonareas.rentapp.MainActivity
 import com.jonareas.rentapp.R
 import com.jonareas.rentapp.ui.LoginActivity
+import com.jonareas.rentapp.ui.SignUpActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

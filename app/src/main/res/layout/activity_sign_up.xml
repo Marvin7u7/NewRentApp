@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_anti_flash"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/rentapp" />
+
+        <TextView
+            android:text="@string/sign_up_today"
+            style="@style/TextViewDisplay"
+            android:textColor="?attr/colorPrimary"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutDefault"
+            app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_name_sign_up"
+            style="@style/EditTextDefault"
+            android:drawableStart="@drawable/ic_name"
+            android:gravity="bottom"
+            android:hint="@string/full_name"
+            android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+         <com.google.android.material.textfield.TextInputLayout
+             style="@style/TextInputLayoutDefault"
+            app:endIconMode="clear_text">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_email_sign_up"
+            style="@style/EditTextDefault"
+            android:drawableStart="@drawable/ic_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutDefault"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_cellphone_sign_up"
+                style="@style/EditTextDefault"
+                android:drawableStart="@drawable/ic_phone"
+                android:hint="@string/cell_number"
+                android:inputType="number" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutDefault"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_password_sign_up"
+                style="@style/EditTextDefault"
+                android:drawableStart="@drawable/ic_security"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/cerulean" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayoutDefault"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_repeat_password_sign_up"
+                style="@style/EditTextDefault"
+                android:drawableStart="@drawable/ic_security"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:textColor="@color/cerulean" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <TextView-->
+<!--            style="@style/TextView"-->
+<!--            android:layout_marginTop="@dimen/padding_high"-->
+<!--            android:text="Seleccione el tipo de usuario"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginBottom="@dimen/padding_small"/>-->
+
+<!--        <RadioGroup-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="@dimen/padding_standard"-->
+<!--            android:layout_marginEnd="@dimen/padding_standard">-->
+
+<!--            <RadioButton-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:fontFamily="@font/raleway"-->
+<!--                android:hint="Alquilar o comprar inmueble"-->
+<!--                android:textColorLink="@color/white_anti_flash"-->
+<!--                android:textSize="@dimen/login_text_size"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <RadioButton-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:fontFamily="@font/raleway"-->
+<!--                android:hint="Ofrecer un inmueble en alquiler"-->
+<!--                android:textColorLink="@color/white_anti_flash"-->
+<!--                android:textSize="@dimen/login_text_size"-->
+<!--                android:textStyle="bold" />-->
+<!--        </RadioGroup>-->
+
+
+        <Button
+            android:id="@+id/button_sign_in"
+            style="@style/ButtonDefault"
+            android:layout_marginTop="@dimen/margin_top_standard"
+            android:text="@string/sign_up" />
+
+
+        <TextView
+            android:id="@+id/text_view_sign_in"
+            style="@style/TextView"
+            android:layout_marginTop="@dimen/padding_standard"
+            android:text="@string/already_have_account"
+            android:layout_marginBottom="@dimen/padding_standard"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>

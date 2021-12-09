@@ -12,26 +12,14 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
         <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/grey_slate</item>
         <item name="android:navigationBarColor">@color/matte_black</item>
     </style>
-    <!-- Bottom Navigation Bar. -->
-    <style name="BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name="android:background">@color/dark_blue_grey</item>
-        <item name="itemIconTint">@color/bottom_nav_text_color</item>
-        <item name="itemTextAppearanceActive">@style/BottomNavigation.ActiveItemTextAppearance</item>
-        <item name="itemTextAppearanceInactive">@style/BottomNavigation.InactiveItemTextAppearance</item>
-        <item name="itemTextColor">@color/bottom_nav_text_color</item>
-        <item name="paddingStart">@dimen/padding_toolbar</item>
-        <item name="paddingEnd">@dimen/padding_toolbar</item>
-
-    </style>
-    <!-- Bottom Navigation (In)Active Text Appearance. -->
-    <style name="BottomNavigation.ActiveItemTextAppearance" parent="TextAppearance.AppCompat">
-        <item name="fontFamily">@font/palanquin_dark</item>
-        <item name="android:textStyle">normal</item>
-    </style>
-    <style name="BottomNavigation.InactiveItemTextAppearance" parent="TextAppearance.AppCompat">
-        <item name="fontFamily">@font/palanquin</item>
-        <item name="android:textStyle">normal</item>
+    <!-- NoActionBar application theme. -->
+    <style name="Theme.RentApp.NoActionBar" parent="Theme.RentApp">
+        <item name="android:statusBarColor">@color/cerulean</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>

@@ -10,12 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RentApp">
         <activity
-            android:name=".ui.SingUpActivity"
-            android:exported="false" />
+            android:name=".ui.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.RentApp.NoActionBar"/>
         <activity
             android:name=".ui.LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.Material3.DayNight.NoActionBar" />
+            android:theme="@style/Theme.RentApp.NoActionBar"/>
         <activity
             android:name=".splash.SplashActivity"
             android:exported="true"

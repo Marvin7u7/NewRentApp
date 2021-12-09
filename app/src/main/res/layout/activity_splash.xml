@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".splash.SplashActivity"
-    android:background="@color/white_link_water"
+    android:background="?attr/colorContainer"
     >
 
     <com.google.android.material.imageview.ShapeableImageView

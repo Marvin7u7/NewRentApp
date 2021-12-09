@@ -4,8 +4,7 @@
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/polished_white"
-    >
+    android:background="?attr/colorContainer">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,19 +22,17 @@
             style="@style/TextViewDisplay"
             android:color="@color/cerulean"/>
 
-
         <com.google.android.material.textfield.TextInputLayout
             style="@style/TextInputLayoutDefault"
-            android:gravity="center_vertical|start"
             app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_name_sign_up"
             style="@style/EditTextDefault"
-            android:gravity="center_vertical|start"
             android:drawableStart="@drawable/ic_name"
             android:hint="@string/full_name"
             android:inputType="text" />
+
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,11 +70,11 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_password_sign_up"
-                style="@style/EditTextDefault"
+                style="@style/EditTextPassword"
                 android:drawableStart="@drawable/ic_security"
                 android:hint="@string/password"
                 android:inputType="textPassword"
-                android:textColor="@color/cerulean" />
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -88,45 +85,13 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_repeat_password_sign_up"
-                style="@style/EditTextDefault"
+                style="@style/EditTextPassword"
                 android:drawableStart="@drawable/ic_security"
                 android:hint="@string/confirm_password"
                 android:inputType="textPassword"
-                android:textColor="@color/cerulean" />
+                 />
+
         </com.google.android.material.textfield.TextInputLayout>
-
-<!--        <TextView-->
-<!--            style="@style/TextView"-->
-<!--            android:layout_marginTop="@dimen/padding_high"-->
-<!--            android:text="Seleccione el tipo de usuario"-->
-<!--            android:textStyle="bold"-->
-<!--            android:layout_marginBottom="@dimen/padding_small"/>-->
-
-<!--        <RadioGroup-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginStart="@dimen/padding_standard"-->
-<!--            android:layout_marginEnd="@dimen/padding_standard">-->
-
-<!--            <RadioButton-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:fontFamily="@font/raleway"-->
-<!--                android:hint="Alquilar o comprar inmueble"-->
-<!--                android:textColorLink="@color/white_anti_flash"-->
-<!--                android:textSize="@dimen/login_text_size"-->
-<!--                android:textStyle="bold" />-->
-
-<!--            <RadioButton-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:fontFamily="@font/raleway"-->
-<!--                android:hint="Ofrecer un inmueble en alquiler"-->
-<!--                android:textColorLink="@color/white_anti_flash"-->
-<!--                android:textSize="@dimen/login_text_size"-->
-<!--                android:textStyle="bold" />-->
-<!--        </RadioGroup>-->
-
 
         <Button
             android:id="@+id/button_sign_in"

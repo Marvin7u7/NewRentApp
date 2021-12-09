@@ -13,7 +13,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/login_edit_text_size</item>
         <item name="android:layout_marginStart">@dimen/margin_high</item>
-        <item name="android:gravity">center_vertical</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:paddingBottom">@dimen/padding_small</item>
         <item name="android:paddingStart">@dimen/padding_standard</item>
         <item name="android:layout_marginEnd">@dimen/margin_high</item>
         <item name="android:background">@drawable/round_border</item>
@@ -22,9 +23,13 @@
         <item name="android:fontFamily">@font/raleway</item>
         <item name="maxLines">1</item>
         <item name="android:ems">10</item>
-        <item name="android:textColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
         <item name="android:textColorHint">?attr/colorAccent</item>
         <item name="android:textStyle">bold</item>
+    </style>
+    <!-- Edit Text for Passwords -->
+    <style name="EditTextPassword" parent="EditTextDefault">
+        <item name="android:textColor">?attr/colorOnSecondary</item>
     </style>
     <!-- TextView Default  -->
     <style name="TextView" parent="Widget.AppCompat.TextView">
@@ -47,11 +52,11 @@
         <item name="android:fontFamily">@font/expletus_sans</item>
         <item name="android:textSize">35sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">?attr/colorPrimary</item>
         <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
         <item name="android:letterSpacing">0.03</item>
         <item name="android:ems">10</item>
-        <item name="android:textColorHint">@color/grey_slate</item>
+        <item name="android:textColorHint">?attr/colorAccent</item>
     </style>
     <!-- Button Default  -->
     <style name="ButtonDefault" parent="Widget.Material3.Button">

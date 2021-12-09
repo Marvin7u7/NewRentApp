@@ -1,13 +1,12 @@
 package com.jonareas.rentapp.splash
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
 import com.jonareas.rentapp.R
 import com.jonareas.rentapp.ui.LoginActivity
-import com.jonareas.rentapp.ui.SignUpActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +14,8 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         val TIME_DELAY_IN_MILIS = 1000.toLong()
+
+        supportActionBar?.hide()
 
         Handler(Looper.myLooper()!!).postDelayed(
             {

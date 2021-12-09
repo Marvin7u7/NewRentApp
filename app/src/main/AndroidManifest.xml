@@ -12,16 +12,15 @@
         <activity
             android:name=".ui.SignUpActivity"
             android:exported="false"
-            android:theme="@style/Theme.RentApp.NoActionBar"/>
-
+            android:theme="@style/Theme.RentApp"/>
         <activity
             android:name=".ui.LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.RentApp.NoActionBar"/>
+            android:theme="@style/Theme.RentApp"/>
         <activity
             android:name=".splash.SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.Design.NoActionBar">
+            android:theme="@style/Theme.RentApp.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,10 +30,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

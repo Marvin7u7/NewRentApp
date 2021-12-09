@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/add_house">
+    app:startDestination="@id/search_house">
 
     <fragment
         android:id="@+id/add_house"
@@ -25,4 +25,9 @@
         android:name="com.jonareas.rentapp.ui.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/search_house"
+        android:name="com.jonareas.rentapp.ui.SearchHouseFragment"
+        android:label="fragment_search_house"
+        tools:layout="@layout/fragment_search_house" />
 </navigation>

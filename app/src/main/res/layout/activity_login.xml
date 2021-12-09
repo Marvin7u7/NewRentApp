@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_anti_flash"
+    android:background="@color/polished_white"
     tools:context=".ui.LoginActivity">
 
 
@@ -26,7 +26,6 @@
         android:background="@drawable/wave"
         android:forceDarkAllowed="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view_background_color" />
 
@@ -62,21 +61,19 @@
         <Button
             android:id="@+id/button_login"
             style="@style/ButtonDefault"
-            android:text="@string/login"
-          />
+            android:text="@string/login" />
 
         <TextView
             android:id="@+id/text_view_sign_up"
             style="@style/TextView"
             android:text="@string/new_user"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
     </LinearLayout>
 
     <ImageView
         android:id="@+id/image_view_rentapp_login"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/image_view_height_standard"
-        android:layout_marginTop="@dimen/margin_top_standard"
+        style="@style/ImageViewDefault"
+        android:layout_marginTop="@dimen/margin_top_high"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

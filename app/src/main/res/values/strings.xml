@@ -22,5 +22,6 @@
     <string name="already_have_account">¿Ya tienes una cuenta? Inicia Sesión</string>
     <string name="sign_up_today">Regístrate</string>
     <string name="content_description_rentapp_logo">Logo de la RentApp</string>
+    <string name="search_house">Buscar Casa</string>
 
 </resources>

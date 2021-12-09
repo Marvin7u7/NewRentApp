@@ -13,6 +13,7 @@
             android:name=".ui.SignUpActivity"
             android:exported="false"
             android:theme="@style/Theme.RentApp.NoActionBar"/>
+
         <activity
             android:name=".ui.LoginActivity"
             android:exported="true"

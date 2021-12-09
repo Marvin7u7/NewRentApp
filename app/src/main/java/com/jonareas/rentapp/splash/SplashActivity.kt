@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import com.jonareas.rentapp.MainActivity
 import com.jonareas.rentapp.R
+import com.jonareas.rentapp.ui.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
         )
     }
 
-    private fun startFirstActivity() = startActivity(Intent(this, MainActivity::class.java))
+    private fun startFirstActivity() = startActivity(Intent(this, LoginActivity::class.java))
 
 
 

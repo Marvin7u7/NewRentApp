@@ -15,7 +15,7 @@
     <dimen name="padding_high">32dp</dimen>
     <dimen name="margin_high">32dp</dimen>
     <dimen name="margin_top_standard">25dp</dimen>
-    <dimen name="margin_top_small">8dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
     <dimen name="image_view_height_standard">100dp</dimen>
     <dimen name="image_view_height_small">75dp</dimen>
     <dimen name="spinner_width">80dp</dimen>

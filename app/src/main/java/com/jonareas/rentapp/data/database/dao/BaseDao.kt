@@ -1,4 +1,4 @@
-package com.jonareas.rentapp.data.dao
+package com.jonareas.rentapp.data.database.dao
 
 import androidx.room.Delete
 import androidx.room.Insert

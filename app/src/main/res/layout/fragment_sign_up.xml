@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorContainer">
+    android:background="?attr/colorContainer"
+    tools:context=".views.login.SignUpFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,19 +21,18 @@
 
         <TextView
             android:text="@string/sign_up_today"
-            style="@style/TextViewDisplay"
-            android:color="@color/cerulean"/>
+            style="@style/TextViewDisplay" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/TextInputLayoutDefault"
             app:endIconMode="clear_text">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text_name_sign_up"
-            style="@style/EditTextDefault"
-            android:drawableStart="@drawable/ic_name"
-            android:hint="@string/full_name"
-            android:inputType="text" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_name_sign_up"
+                style="@style/EditTextDefault"
+                android:drawableStart="@drawable/ic_name"
+                android:hint="@string/full_name"
+                android:inputType="text" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -40,13 +41,13 @@
             style="@style/TextInputLayoutDefault"
             app:endIconMode="clear_text">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edit_text_email_sign_up"
-            style="@style/EditTextDefault"
-            android:drawableStart="@drawable/ic_email"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_email_sign_up"
+                style="@style/EditTextDefault"
+                android:drawableStart="@drawable/ic_email"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -89,7 +90,7 @@
                 android:drawableStart="@drawable/ic_security"
                 android:hint="@string/confirm_password"
                 android:inputType="textPassword"
-                 />
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 

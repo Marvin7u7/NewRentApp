@@ -1,4 +1,4 @@
-package com.jonareas.rentapp.data.models
+package com.jonareas.rentapp.data.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

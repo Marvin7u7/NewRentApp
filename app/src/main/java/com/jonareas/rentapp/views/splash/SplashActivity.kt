@@ -1,4 +1,4 @@
-package com.jonareas.rentapp.splash
+package com.jonareas.rentapp.views.splash
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.jonareas.rentapp.R
-import com.jonareas.rentapp.ui.LoginActivity
+import com.jonareas.rentapp.views.login.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +15,6 @@ class SplashActivity : AppCompatActivity() {
 
         val TIME_DELAY_IN_MILIS = 1000.toLong()
 
-        supportActionBar?.hide()
 
         Handler(Looper.myLooper()!!).postDelayed(
             {

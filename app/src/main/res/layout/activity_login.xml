@@ -5,87 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorContainer"
-    tools:context=".ui.LoginActivity">
+    tools:context=".views.login.LoginActivity">
 
-    <View
-        android:id="@+id/view_background_color"
-        android:layout_width="0dp"
-        android:layout_height="175dp"
-        android:background="?attr/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:forceDarkAllowed="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/view_wave"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:background="@drawable/wave"
-        android:forceDarkAllowed="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view_background_color" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/margin_top_extreme"
-        android:gravity="center"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/text_view_login"
-            style="@style/TextViewDisplay"
-            android:text="@string/login_today"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_wave" />
-
-        <EditText
-            android:id="@+id/edit_text_email"
-            style="@style/EditTextDefault"
-            android:drawableStart="@drawable/ic_email"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress" />
-
-        <EditText
-            android:id="@+id/edit_text_password"
-            style="@style/EditTextDefault"
-            android:drawableStart="@drawable/ic_lock"
-            android:hint="@string/password"
-            android:inputType="textPassword" />
-
-        <Button
-            android:id="@+id/button_login"
-            style="@style/ButtonDefault"
-            android:text="@string/login"/>
-
-        <TextView
-            android:id="@+id/text_view_sign_up"
-            style="@style/TextView"
-            android:text="@string/new_user"
-            android:textStyle="bold"/>
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/image_view_rentapp_login"
-        style="@style/ImageViewDefault"
-        android:layout_marginTop="@dimen/margin_top_high"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rentapp_white"
-        android:contentDescription="@string/content_description_rentapp_logo"/>
-
-    <TextView
-        style='@style/TextViewDisplay'
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/BottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/libre_baskerville"
-        android:gravity="center"
-        android:text="@string/rentapp_title"
-        android:textColor="?attr/colorOnPrimary"
-        app:layout_constraintTop_toBottomOf="@id/image_view_rentapp_login" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_login" />
 
+    <fragment
+        android:id="@+id/fragment_container_login"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_login"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,8 +1,8 @@
-package com.jonareas.rentapp.data.dao
+package com.jonareas.rentapp.data.database.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Query
-import com.jonareas.rentapp.data.models.House
+import com.jonareas.rentapp.data.model.House
 
 interface HouseDao :BaseDao<House> {
     @Query("SELECT * FROM house where idHouse = :id_house")

@@ -1,12 +1,12 @@
-package com.jonareas.rentapp
+package com.jonareas.rentapp.views
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.jonareas.rentapp.R
 import com.jonareas.rentapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.fragmentLandlord) as NavHostFragment
+            supportFragmentManager.findFragmentById(R.id.fragmentMain) as NavHostFragment
 
         val navController = navHostFragment.navController
 

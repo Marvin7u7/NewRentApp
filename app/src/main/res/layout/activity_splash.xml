@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splash.SplashActivity"
-    android:background="?attr/colorContainer"
-    >
+    tools:context=".views.splash.SplashActivity">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/image_view_rentapp_logo"

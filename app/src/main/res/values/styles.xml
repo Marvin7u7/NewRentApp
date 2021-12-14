@@ -1,46 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- CardView Default  -->
+    <style name="CardViewDefault" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">?attr/colorPrimary</item>
+        <item name="android:layout_margin">@dimen/margin_standard</item>
+    </style>
+    <!-- CardView Alternative  -->
+    <style name="CardViewAlternative" parent="CardViewDefault">
+        <item name="android:backgroundTint">?attr/colorPrimaryVariant</item>
+    </style>
+    <!-- CardView Round  -->
+    <style name="CardViewDefaultRound" parent="CardViewDefault">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+    </style>
+    <!-- Linear Layout used inside a CardView  -->
+    <style name="LinearLayoutDefault">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
+        <item name="android:layout_marginEnd">@dimen/margin_small</item>
+    </style>
     <!-- Text Input Layout Default  -->
     <style name="TextInputLayoutDefault" parent="Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:textColorHint">?attr/colorAccent</item>
-        <item name="endIconTint">?attr/colorPrimaryVariant</item>
-        <item name="boxStrokeWidth">@dimen/none</item>
+        <item name="android:layout_marginStart">@dimen/margin_standard</item>
+        <item name="android:layout_marginEnd">@dimen/margin_standard</item>
+        <item name="android:layout_marginTop">@dimen/margin_standard</item>
+        <item name="hintEnabled">false</item>
+        <item name="endIconTint">?attr/colorOnPrimary</item>
+<!--        <item name="boxStrokeWidth">@dimen/none</item>-->
     </style>
     <!-- Edit Text Default  -->
     <style name="EditTextDefault" parent="ThemeOverlay.Material3.TextInputEditText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/login_edit_text_size</item>
-        <item name="android:layout_marginStart">@dimen/margin_high</item>
-        <item name="android:gravity">bottom</item>
-        <item name="android:paddingBottom">@dimen/padding_small</item>
+        <item name="android:gravity">center_vertical</item>
         <item name="android:paddingStart">@dimen/padding_standard</item>
-        <item name="android:layout_marginEnd">@dimen/margin_high</item>
-        <item name="android:background">@drawable/round_border</item>
+        <item name="android:background">@drawable/button_default_background</item>
         <item name="android:drawablePadding">@dimen/padding_standard</item>
         <item name="android:layout_marginTop">@dimen/margin_top_standard</item>
         <item name="android:fontFamily">@font/raleway</item>
-        <item name="maxLines">1</item>
-        <item name="android:ems">10</item>
-        <item name="android:textColor">?attr/colorOnSecondary</item>
-        <item name="android:textColorHint">?attr/colorAccent</item>
         <item name="android:textStyle">bold</item>
+        <item name="maxLines">1</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor_color</item>
+        <item name="android:textColorHint">?attr/colorAccent</item>
+        <item name="android:textSize">@dimen/text_size_standard</item>
     </style>
     <!-- Edit Text for Passwords -->
     <style name="EditTextPassword" parent="EditTextDefault">
-        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
     </style>
     <!-- TextView Default  -->
     <style name="TextView" parent="Widget.AppCompat.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/margin_small</item>
         <item name="android:layout_marginTop">@dimen/margin_top_high</item>
-        <item name="android:layout_marginStart">@dimen/margin_high</item>
-        <item name="android:layout_marginEnd">@dimen/margin_high</item>
         <item name="fontFamily">@font/raleway</item>
-        <item name="android:textColor">?attr/colorPrimary</item>
-        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="android:textSize">@dimen/text_size_standard</item>
+    </style>
+    <!-- TextView for Forms  -->
+    <style name="TextViewForm" parent="TextView">
+        <item name="android:textAllCaps">true</item>
     </style>
     <!-- TextView for Display -->
     <style name="TextViewDisplay" parent="Widget.AppCompat.TextView">
@@ -49,28 +77,44 @@
         <item name="android:layout_marginStart">@dimen/margin_high</item>
         <item name="android:layout_marginEnd">@dimen/margin_high</item>
         <item name="android:layout_marginTop">@dimen/margin_small</item>
-        <item name="android:fontFamily">@font/expletus_sans</item>
-        <item name="android:textSize">35sp</item>
+        <item name="android:fontFamily">@font/muli_black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">?attr/colorPrimary</item>
-        <item name="android:letterSpacing">0.03</item>
-        <item name="android:ems">10</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="android:textColorHint">?attr/colorAccent</item>
+    </style>
+    !-- TextView for Display (use inside a Form) -->
+    <style name="TextViewDisplayForm" parent="TextViewDisplay">
+        <item name="android:layout_marginTop">@dimen/margin_standard</item>
+        <item name="android:textSize">@dimen/text_size_standard</item>
+
+    </style>
+    <!-- TextView for Disclaimers and Secondary Text -->
+    <style name="TextViewSecondary" parent="TextView">
+        <item name="fontFamily">@font/della_respira</item>
+        <item name="android:textSize">@dimen/text_size_standard</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <!-- Button Default  -->
     <style name="ButtonDefault" parent="Widget.Material3.Button">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/login_button_size</item>
-        <item name="android:layout_marginStart">@dimen/margin_high</item>
-        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/raleway</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:layout_marginEnd">@dimen/margin_high</item>
-        <item name="android:layout_marginTop">@dimen/margin_top_standard</item>
+        <item name="android:background">@drawable/button_default_background</item>
+        <item name="android:layout_marginStart">@dimen/margin_standard</item>
+        <item name="android:layout_marginEnd">@dimen/margin_standard</item>
         <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
+    </style>
+    <!-- Button Alternative  -->
+    <style name="ButtonAlternative" parent="ButtonDefault">
+        <item name="android:textAllCaps">true</item>
+        <item name="backgroundTint">@color/brown_50</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
-        <item name="android:textStyle">bold</item>
-        <item name="backgroundTint">?attr/colorPrimaryVariant</item>
     </style>
     <!-- Bottom Navigation Bar. -->
     <style name="BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">

@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/add_house"
-        android:name="com.jonareas.rentapp.views.AddHouseFragment"
+        android:name="com.jonareas.rentapp.views.main.AddHouseFragment"
         android:label="fragment_add_house"
         tools:layout="@layout/fragment_add_house" />
     <fragment
         android:id="@+id/edit_house"
-        android:name="com.jonareas.rentapp.views.EditHouseFragment"
+        android:name="com.jonareas.rentapp.views.main.EditHouseFragment"
         android:label="fragment_edit_house"
         tools:layout="@layout/fragment_edit_house" />
     <fragment
         android:id="@+id/edit_profile"
-        android:name="com.jonareas.rentapp.views.ProfileFragment"
+        android:name="com.jonareas.rentapp.views.main.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/settings"
-        android:name="com.jonareas.rentapp.views.SettingsFragment"
+        android:name="com.jonareas.rentapp.views.main.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/search_house"
-        android:name="com.jonareas.rentapp.views.SearchHouseFragment"
+        android:name="com.jonareas.rentapp.views.main.SearchHouseFragment"
         android:label="fragment_search_house"
         tools:layout="@layout/fragment_search_house" />
 </navigation>

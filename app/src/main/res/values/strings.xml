@@ -11,18 +11,31 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="email">Correo Electrónico</string>
+    <string name="username">Nombre de Usuario</string>
     <string name="password">Contraseña</string>
     <string name="sign_in">Iniciar Sesión</string>
     <string name="new_user">¿Nuevo Usuario? Regístrate ahora</string>
     <string name="login_today">Inicio de Sesión</string>
-    <string name="confirm_password">Confirmar Contraseña</string>
+    <string name="repeat_password">Repetir Contraseña</string>
     <string name="full_name">Nombre Completo</string>
     <string name="cell_number">Número Telefónico</string>
     <string name="sign_up">Registrar</string>
     <string name="already_have_account">¿Ya tienes una cuenta? Inicia Sesión</string>
-    <string name="sign_up_today">Regístrate</string>
+    <string name="sign_up_today">CREA UNA NUEVA CUENTA</string>
     <string name="content_description_rentapp_logo">Logo de la RentApp</string>
     <string name="search_house">Buscar Casa</string>
-    <string name="retrieved_password">Recuperar contraseña</string>
+    <string name="retrieve_password">Recuperar contraseña</string>
+    <string name="rentapp_plus_account_benefits">Lo que encontrarás en tu cuenta RentApp+</string>
+    <string name="login_rentapp_account">INICIA SESIÓN EN TU CUENTA RENTAPP+</string>
+    <string name="hint_email">nombre@ejemplo.com</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="contact_us">Contáctanos</string>
+    <string name="sad_but_true_dad_joke">Aquí pondría las funcionalidades de la RentApp…si tuviera alguna…</string>
+    <string name="rentapp_support_email">rentappsupport@jonareas.com</string>
+    <string name="rentapp_support_cell_number">(+505) 1800-2020</string>
+    <string name="personal_info">Información Personal</string>
+    <string name="account_info">Datos de la Cuenta</string>
+    <string name="retrieve_your_password">Recupera tu contraseña</string>
+    <string name="save">Guardar</string>
 
 </resources>

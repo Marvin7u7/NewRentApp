@@ -18,6 +18,9 @@
     <color name="blue_grey">#444851</color>
     <color name="dark_blue_grey">#333333</color>
     <color name="gainsboro">#808080</color>
+    <color name="grey_100">#F6F5F3</color>
+    <color name="brown_100">#CAC7C5</color>
+    <color name="brown_50">#EAE9E4</color>
     <color name="grey_800">#424242</color>
     <color name="grey_slate">#A0A0A0</color>
     <color name="iron">#DBDFE3</color>

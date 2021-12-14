@@ -3,21 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_login"
-    app:startDestination="@id/navigation_sign_in">
+    app:startDestination="@id/navigation_on_launch">
 
     <fragment
         android:id="@+id/navigation_sign_in"
         android:name="com.jonareas.rentapp.views.login.SignInFragment"
-        android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
+        android:label="@string/sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_navigation_sign_in_to_navigation_forget_password"
+            app:destination="@id/navigation_forget_password" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_sign_up"
         android:name="com.jonareas.rentapp.views.login.SignUpFragment"
-        android:label="fragment_sign_up"
+        android:label="@string/sign_up"
         tools:layout="@layout/fragment_sign_up" />
     <fragment
         android:id="@+id/navigation_forget_password"
         android:name="com.jonareas.rentapp.views.login.ForgetPasswordFragment"
-        android:label="fragment_forget_password"
-        tools:layout="@layout/fragment_forget_password" />
+        android:label="@string/forgot_password"
+        tools:layout="@layout/fragment_forget_password" >
+        <action
+            android:id="@+id/action_navigation_forget_password_to_navigation_sign_in"
+            app:destination="@id/navigation_sign_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_on_launch"
+        android:name="com.jonareas.rentapp.views.login.OnLaunchFragment"
+        android:label="@string/rentapp_title"
+        tools:layout="@layout/fragment_on_launch" >
+        <action
+            android:id="@+id/action_onLaunchFragment_to_navigation_sign_in"
+            app:destination="@id/navigation_sign_in"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_onLaunchFragment_to_navigation_sign_up"
+            app:destination="@id/navigation_sign_up"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
 </navigation>

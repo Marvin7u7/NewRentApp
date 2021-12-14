@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_100"
+        tools:context=".views.login.OnLaunchFragment">
+
+        <LinearLayout
+            style="@style/LinearLayoutDefault"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_top_high"
+            android:orientation="vertical"
+            android:paddingBottom="?attr/actionBarSize">
+
+            <androidx.cardview.widget.CardView style="@style/CardViewDefaultRound">
+
+                <LinearLayout
+                    style="@style/LinearLayoutDefault"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        style="@style/TextViewDisplay"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="@dimen/margin_bottom_high"
+                        android:layout_marginEnd="0dp"
+                        android:gravity="center"
+                        android:text="Bienvenido a la Rentapp" />
+
+                    <TextView
+                        style="@style/TextView"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/padding_half"
+                        android:layout_marginEnd="@dimen/padding_half"
+                        android:text="Por favor, ingresa a tu cuenta RentApp+ o registra un nuevo usuario."
+                        android:textAlignment="center" />
+
+                    <Button
+                        android:id="@+id/button_sign_in"
+                        style="@style/ButtonDefault"
+                        android:layout_marginTop="@dimen/margin_standard"
+                        android:text="@string/sign_in"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:id="@+id/button_sign_up"
+                        style="@style/ButtonAlternative"
+                        android:layout_marginTop="@dimen/margin_standard"
+                        android:layout_marginBottom="@dimen/margin_bottom_high"
+                        android:text="@string/sign_up"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <include layout="@layout/login_footer" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

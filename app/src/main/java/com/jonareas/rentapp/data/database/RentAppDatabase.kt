@@ -31,4 +31,11 @@ abstract class RentAppDatabase : RoomDatabase() {
         }
 
     }
-}
+
+    }
+//    abstract fun houseDao() : HouseDao
+//
+//    abstract fun userDao() : UserDao
+//
+//    abstract fun favHouseDao() : FavHouseDao
+//}

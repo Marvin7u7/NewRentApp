@@ -4,45 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorPrimaryVariant"
     tools:context=".views.splash.SplashActivity">
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/image_view_rentapp_logo"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/rentapp"
+        app:lottie_rawRes="@raw/house"
+        app:lottie_autoPlay="true"
+        tools:src="@drawable/ic_cottage"
+        android:forceDarkAllowed="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="140dp"
         />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/text_view_rentapp_name"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_rentapp_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/image_view_rentapp_logo"
-        android:fontFamily="@font/libre_baskerville"
-        android:gravity="center"
-        android:text="@string/rentapp_title"
-        android:textColor="@color/cerulean"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/image_view_rentapp_logo" />
+        app:layout_constraintTop_toBottomOf="@id/image_view_rentapp_logo">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/image_view_rentapp_logo"
-        android:layout_marginTop="-10dp"
-        android:layout_marginEnd="@dimen/margin_high"
-        android:fontFamily="@font/aguafina_script"
-        android:gravity="end"
-        android:text="@string/rentapp_author"
-        android:textColor="@color/grey_slate"
-        android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_view_rentapp_name" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_rentapp_name"
+            style='@style/TextViewDisplay'
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/della_respira"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="@string/rentapp_title"
+            android:textColor="@color/matte_black"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/text_view_rentapp_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="@dimen/margin_standard"
+            android:fontFamily="@font/alex_brush"
+            android:gravity="end"
+            android:text="@string/rentapp_author"
+            android:textColor="@color/grey_slate"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_view_rentapp_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

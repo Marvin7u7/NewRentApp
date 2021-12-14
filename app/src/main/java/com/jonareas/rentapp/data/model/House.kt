@@ -1,5 +1,6 @@
 package com.jonareas.rentapp.data.model
 
+import androidx.annotation.NonNull
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -7,6 +8,8 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "house")
 data class House(
     @PrimaryKey(autoGenerate = true)
+    @NonNull
+    @ColumnInfo(name = "idHouse")
     val idHouse: Int = 0,
     @ColumnInfo(name = "photo")
     val photo: String,

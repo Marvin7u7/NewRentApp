@@ -2,15 +2,15 @@
     <!-- Base application theme. -->
     <style name="Theme.RentApp" parent="Theme.Material3.DayNight">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/cerulean</item>
-        <item name="colorPrimaryVariant">@color/cerulean_dark</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/grey_100</item>
+        <item name="colorOnPrimary">@color/matte_black</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondary">@color/matte_black</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/matte_black</item>
+        <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSecondary</item>
         <!-- Customize your theme here. -->
         <item name="colorAccent">@color/grey_slate</item> <!-- Used as hint for EditTexts and Secondary Text -->
         <item name="colorContainer">@color/polished_white</item>   <!-- Used as a background in fragments and activities -->
@@ -27,4 +27,9 @@
     <style name="Theme.RentApp.Splash" parent="Theme.RentApp">
         <item name="android:statusBarColor">?attr/colorContainer</item>
     </style>
+    <!-- ActionBar Title-->
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/della_respira</item>
+    </style>
+
 </resources>

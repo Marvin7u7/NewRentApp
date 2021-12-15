@@ -2,8 +2,11 @@ package com.jonareas.rentapp.views.login
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.jonareas.rentapp.R
 import com.jonareas.rentapp.databinding.ActivityLoginBinding
@@ -11,6 +14,8 @@ import com.jonareas.rentapp.databinding.ActivityLoginBinding
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityLoginBinding
+    private lateinit var appBarConfiguration : AppBarConfiguration
+    private lateinit var navController : NavController
 
 
     override fun onCreate(savedInstanceState: Bundle?)  {
@@ -18,22 +23,21 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_fragment_login) as NavHostFragment
-
-        val navController = navHostFragment.navController
+        navController = (supportFragmentManager.findFragmentById(R.id.nav_fragment_login) as NavHostFragment).navController
 
         // Top-level Destinations
-        val appBarConfiguration =
+        appBarConfiguration =
             AppBarConfiguration(setOf(
                 R.id.navigation_on_launch
             ))
 
         setupActionBarWithNavController(navController = navController, configuration = appBarConfiguration)
-
-        //TODO: Set Up NavController, AppBarConfiguration, OnSupportNavigateUp
-
     }
+
+    override fun onSupportNavigateUp(): Boolean  = navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
+
+
+
+
 
 }

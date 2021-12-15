@@ -4,17 +4,23 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.jonareas.rentapp.data.database.dao.FavHouseDao
+import com.jonareas.rentapp.data.database.dao.HouseDao
 import com.jonareas.rentapp.data.database.dao.UserDao
+import com.jonareas.rentapp.data.model.FavHouse
+import com.jonareas.rentapp.data.model.House
 import com.jonareas.rentapp.data.model.User
 
-@Database(entities = [User::class], version = 1, exportSchema = false)
+const val DATABASE_VERSION = 3
+
+@Database(entities = [User::class, House::class, FavHouse::class], version = DATABASE_VERSION)
 abstract class RentAppDatabase : RoomDatabase() {
 
-//    abstract fun houseDao(): HouseDao
+    abstract fun houseDao(): HouseDao
 
     abstract fun userDao(): UserDao
 
-//    abstract fun favHouseDao(): FavHouseDao
+    abstract fun favHouseDao(): FavHouseDao
 
     companion object {
 

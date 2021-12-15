@@ -2,27 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/search_house"
+        android:id="@+id/nav_main_search_house"
         android:icon="@drawable/ic_blur"
         android:title="@string/search_house" />
 
     <item
-        android:id="@+id/add_house"
+        android:id="@+id/nav_main_add_house"
         android:icon="@drawable/ic_add_house"
         android:title="@string/add_house" />
 
     <item
-        android:id="@+id/edit_house"
+        android:id="@+id/nav_main_edit_house"
         android:icon="@drawable/ic_edit_house"
         android:title="@string/edit_house" />
 
     <item
-        android:id="@+id/edit_profile"
+        android:id="@+id/nav_main_edit_profile"
         android:icon="@drawable/ic_user"
         android:title="@string/edit_profile" />
 
     <item
-        android:id="@+id/settings"
+        android:id="@+id/nav_main_settings"
         android:title="@string/settings"
         android:icon="@drawable/ic_settings"/>
 

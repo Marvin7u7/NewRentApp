@@ -3,30 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/search_house">
+    app:startDestination="@id/nav_main_search_house">
 
     <fragment
-        android:id="@+id/add_house"
+        android:id="@+id/nav_main_add_house"
         android:name="com.jonareas.rentapp.views.main.AddHouseFragment"
         android:label="fragment_add_house"
         tools:layout="@layout/fragment_add_house" />
     <fragment
-        android:id="@+id/edit_house"
+        android:id="@+id/nav_main_edit_house"
         android:name="com.jonareas.rentapp.views.main.EditHouseFragment"
         android:label="fragment_edit_house"
         tools:layout="@layout/fragment_edit_house" />
     <fragment
-        android:id="@+id/edit_profile"
+        android:id="@+id/nav_main_edit_profile"
         android:name="com.jonareas.rentapp.views.main.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/settings"
+        android:id="@+id/nav_main_settings"
         android:name="com.jonareas.rentapp.views.main.SettingsFragment"
         android:label="fragment_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
-        android:id="@+id/search_house"
+        android:id="@+id/nav_main_search_house"
         android:name="com.jonareas.rentapp.views.main.SearchHouseFragment"
         android:label="fragment_search_house"
         tools:layout="@layout/fragment_search_house" />

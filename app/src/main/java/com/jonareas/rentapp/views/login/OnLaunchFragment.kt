@@ -5,10 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.jonareas.rentapp.R
+import androidx.navigation.fragment.findNavController
+import com.jonareas.rentapp.databinding.FragmentOnLaunchBinding
 
 class OnLaunchFragment : Fragment() {
 
+    private lateinit var binding : FragmentOnLaunchBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -16,10 +18,23 @@ class OnLaunchFragment : Fragment() {
         savedInstanceState: Bundle?
     ) : View
         {
-            return inflater.inflate(R.layout.fragment_on_launch,  container, false)
+            binding = FragmentOnLaunchBinding.inflate(inflater, container, false)
+            return binding.root
         }
 
-    //TODO: Handle Navigation
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        navigateOnButtonClick()
+    }
 
+    private fun navigateOnButtonClick() = binding.apply {
+        buttonSignIn.setOnClickListener {
+            OnLaunchFragmentDirections.actionOnLaunchFragmentToNavigationSignIn().also{findNavController().navigate(it)}
+        }
+
+        buttonSignUp.setOnClickListener {
+            OnLaunchFragmentDirections.actionOnLaunchFragmentToNavigationSignUp().also{findNavController().navigate(it)}
+        }
+    }
 
 }

@@ -5,18 +5,34 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.jonareas.rentapp.R
+import androidx.navigation.fragment.findNavController
+import com.jonareas.rentapp.databinding.FragmentSignInBinding
 
 class SignInFragment : Fragment() {
 
 
+    private lateinit var binding: FragmentSignInBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
-        return inflater.inflate(R.layout.fragment_sign_in, container, false)
+        binding = FragmentSignInBinding.inflate(inflater, container, false)
+        return binding.root
     }
-    //TODO: Handle Navigation
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        navigateToForgetPasswordFragment()
+    }
+
+    private fun navigateToForgetPasswordFragment() =
+        binding.textViewForgetPassword.setOnClickListener {
+            SignInFragmentDirections.actionNavigationSignInToNavigationForgetPassword().also {
+                findNavController().navigate(it)
+            }
+        }
 
 
 }

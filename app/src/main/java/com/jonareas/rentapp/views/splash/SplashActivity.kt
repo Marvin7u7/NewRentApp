@@ -36,16 +36,15 @@ class SplashActivity : AppCompatActivity() {
         )
     }
 
-    private fun animateView() {
+    private fun animateView() =
         binding.apply {
             val fadeInTransition = AnimationUtils.loadAnimation(root.context, R.anim.slide_from_bottom)
             textViewRentappName.startAnimation(fadeInTransition)
             textViewRentappAuthor.startAnimation(fadeInTransition)
         }
 
-    }
-
-    private fun startFirstActivity() = startActivity(Intent(this, LoginActivity::class.java))
+    private fun startFirstActivity() =
+            startActivity(Intent(this, LoginActivity::class.java))
 
 
 

@@ -15,7 +15,8 @@
         <TextView
             style="@style/TextViewDisplay"
             android:layout_marginBottom="@dimen/margin_standard"
-            android:text="@string/login_rentapp_account" />
+            android:text="@string/login_rentapp_account"
+            />
 
         <androidx.cardview.widget.CardView style="@style/CardViewDefault">
 

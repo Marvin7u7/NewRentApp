@@ -10,7 +10,6 @@ import com.jonareas.rentapp.databinding.FragmentSignInBinding
 
 class SignInFragment : Fragment() {
 
-
     private lateinit var binding: FragmentSignInBinding
 
     override fun onCreateView(

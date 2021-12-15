@@ -78,8 +78,9 @@
             android:drawablePadding="@dimen/margin_standard"
             android:fontFamily="@font/raleway_light"
             android:text="@string/rentapp_support_cell_number"
-
             app:drawableLeftCompat="@drawable/ic_phone_charging" />
+
+
 
 
 

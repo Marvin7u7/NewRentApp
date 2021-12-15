@@ -17,6 +17,7 @@
 
         <TextView
             android:text="@string/sign_up_today"
+            android:layout_width="match_parent"
             style="@style/TextViewDisplay" />
 
         <androidx.cardview.widget.CardView style="@style/CardViewDefault">

@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_sign_in" >
         <action
             android:id="@+id/action_navigation_sign_in_to_navigation_forget_password"
-            app:destination="@id/navigation_forget_password" />
+            app:destination="@id/navigation_forget_password"
+            app:enterAnim="@anim/slide"
+            app:exitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/navigation_sign_up"
@@ -26,7 +28,9 @@
         tools:layout="@layout/fragment_forget_password" >
         <action
             android:id="@+id/action_navigation_forget_password_to_navigation_sign_in"
-            app:destination="@id/navigation_sign_in" />
+            app:destination="@id/navigation_sign_in"
+            app:enterAnim="@anim/slide"
+            app:exitAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/navigation_on_launch"
@@ -36,12 +40,12 @@
         <action
             android:id="@+id/action_onLaunchFragment_to_navigation_sign_in"
             app:destination="@id/navigation_sign_in"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:enterAnim="@anim/slide"
+            app:exitAnim="@android:anim/slide_out_right" />
         <action
             android:id="@+id/action_onLaunchFragment_to_navigation_sign_up"
             app:destination="@id/navigation_sign_up"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:enterAnim="@anim/slide"
+            app:exitAnim="@android:anim/slide_out_right" />
     </fragment>
 </navigation>

@@ -24,7 +24,7 @@ class SplashActivity : AppCompatActivity() {
 
     }
 
-    private fun startSplashScreen(timeDelayInMilis : Long = 1000)
+    private fun startSplashScreen(timeDelayInMilis : Long = 1200)
     {
 
         Handler(Looper.myLooper()!!).postDelayed(

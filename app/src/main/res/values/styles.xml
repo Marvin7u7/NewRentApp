@@ -118,7 +118,7 @@
     </style>
     <!-- Bottom Navigation Bar. -->
     <style name="BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
-        <item name="android:background">@color/dark_blue_grey</item>
+        <item name="android:background">?attr/colorPrimaryVariant</item>
         <item name="itemIconTint">@color/bottom_nav_text_color</item>
         <item name="itemTextAppearanceActive">@style/BottomNavigation.ActiveItemTextAppearance</item>
         <item name="itemTextAppearanceInactive">@style/BottomNavigation.InactiveItemTextAppearance</item>

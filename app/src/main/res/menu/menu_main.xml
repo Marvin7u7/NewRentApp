@@ -7,6 +7,11 @@
         android:title="@string/search_house" />
 
     <item
+        android:id="@+id/nav_fav_houses"
+        android:icon="@drawable/ic_heart"
+        android:title="@string/favorites" />
+
+    <item
         android:id="@+id/nav_main_add_house"
         android:icon="@drawable/ic_add_house"
         android:title="@string/add_house" />
@@ -20,11 +25,4 @@
         android:id="@+id/nav_main_edit_profile"
         android:icon="@drawable/ic_user"
         android:title="@string/edit_profile" />
-
-    <item
-        android:id="@+id/nav_main_settings"
-        android:title="@string/settings"
-        android:icon="@drawable/ic_settings"/>
-
-
 </menu>

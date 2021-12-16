@@ -37,5 +37,6 @@
     <string name="account_info">Datos de la Cuenta</string>
     <string name="retrieve_your_password">Recupera tu contraseña</string>
     <string name="save">Guardar</string>
+    <string name="favorites">Favoritos</string>
 
 </resources>

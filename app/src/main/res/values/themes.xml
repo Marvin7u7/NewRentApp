@@ -14,7 +14,7 @@
         <!-- Customize your theme here. -->
         <item name="colorAccent">@color/grey_slate</item> <!-- Used as hint for EditTexts and Secondary Text -->
         <item name="colorContainer">@color/polished_white</item>   <!-- Used as a background in fragments and activities -->
-        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
     </style>
     <!-- NoActionBar application theme. -->
     <style name="Theme.RentApp.NoActionBar" parent="Theme.RentApp">

@@ -14,7 +14,7 @@
             android:id="@+id/action_navigation_sign_in_to_navigation_forget_password"
             app:destination="@id/navigation_forget_password"
             app:enterAnim="@anim/slide"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:popEnterAnim="@anim/slide" />
     </fragment>
     <fragment
         android:id="@+id/navigation_sign_up"
@@ -41,11 +41,13 @@
             android:id="@+id/action_onLaunchFragment_to_navigation_sign_in"
             app:destination="@id/navigation_sign_in"
             app:enterAnim="@anim/slide"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
         <action
             android:id="@+id/action_onLaunchFragment_to_navigation_sign_up"
             app:destination="@id/navigation_sign_up"
             app:enterAnim="@anim/slide"
-            app:exitAnim="@android:anim/slide_out_right" />
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
     </fragment>
 </navigation>

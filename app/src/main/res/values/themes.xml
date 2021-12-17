@@ -17,19 +17,7 @@
         <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
     </style>
     <!-- NoActionBar application theme. -->
-    <style name="Theme.RentApp.NoActionBar" parent="Theme.RentApp">
-        <item name="android:statusBarColor">?attr/colorPrimary</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
 
-    <style name="Theme.RentApp.Splash" parent="Theme.RentApp">
-        <item name="android:statusBarColor">?attr/colorContainer</item>
-    </style>
     <!-- ActionBar Title-->
-    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
-        <item name="android:fontFamily">@font/della_respira</item>
-    </style>
 
 </resources>

@@ -17,7 +17,9 @@
         <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
     </style>
     <!-- NoActionBar application theme. -->
+    <style name="Theme.RentApp.NoActionBar" parent="Theme.RentApp">
 
+    </style>
     <!-- ActionBar Title-->
 
 </resources>

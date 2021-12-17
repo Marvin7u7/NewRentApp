@@ -1,22 +1,29 @@
 package com.jonareas.rentapp.data.repository
 
 import androidx.lifecycle.LiveData
-import com.jonareas.rentapp.data.RentAppApplication
-import com.jonareas.rentapp.data.database.dao.FavHouseDao
+import com.jonareas.rentapp.RentAppApplication
+import com.jonareas.rentapp.data.dao.FavHouseDao
 import com.jonareas.rentapp.data.model.FavHouse
 
 class FavHouseRepositoryImpl: FavHouseRepository {
+
     private val favHouseDao: FavHouseDao by lazy {
         RentAppApplication.rentAppDatabase.favHouseDao()
     }
 
-    override suspend fun saveFavHouse(favHouse: FavHouse) = favHouseDao.insert(favHouse)
+    override fun getById(id: Int): FavHouse = favHouseDao.getById(id)
 
-    override suspend fun updateFavHouse(favHouse: FavHouse) = favHouseDao.update(favHouse)
+    override fun getByUserId(userId: Int): FavHouse = favHouseDao.getByUserId(userId)
 
-    override suspend fun getAllFavHousesById(id: Int) = favHouseDao.getById(id)
+    override fun getAll(): LiveData<List<FavHouse>> = favHouseDao.getAll()
 
-    override suspend fun getAllFavHousesByUserId(id: Int): LiveData<List<FavHouse>> = favHouseDao.getByUserId(id)
+    override suspend fun save(entity: FavHouse) = favHouseDao.insert(entity)
 
-    override suspend fun removeFavHouse(favHouse: FavHouse) = favHouseDao.delete(favHouse)
+    override suspend fun save(vararg entity: FavHouse) = favHouseDao.insert(*entity)
+
+    override suspend fun edit(entity: FavHouse) = favHouseDao.update(entity)
+
+    override suspend fun remove(entity: FavHouse) = favHouseDao.delete(entity)
+
+
 }

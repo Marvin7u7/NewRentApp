@@ -1,10 +1,15 @@
-package com.jonareas.rentapp.data.database.dao
+package com.jonareas.rentapp.data.dao
 
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Update
+import com.jonareas.rentapp.data.model.Persistable
 
-interface BaseDao<T> {
+/**
+ * Base Dao
+ *  @param T Generic Type
+ */
+interface BaseDao<T : Persistable> {
     /**
      * Insert an entity in the database.
      *

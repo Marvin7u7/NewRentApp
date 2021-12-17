@@ -19,4 +19,4 @@ data class User(
     val password: String,
     @ColumnInfo(name = "phone")
     val phone: String
-)
+) : Persistable

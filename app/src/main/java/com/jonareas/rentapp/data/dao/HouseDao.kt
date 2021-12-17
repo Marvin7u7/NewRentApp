@@ -1,4 +1,4 @@
-package com.jonareas.rentapp.data.database.dao
+package com.jonareas.rentapp.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -8,5 +8,5 @@ import com.jonareas.rentapp.data.model.House
 @Dao
 abstract class HouseDao :BaseDao<House> {
     @Query("SELECT * FROM house")
-    abstract fun getAllHouses(): LiveData<List<House>>
+    abstract fun getAll(): LiveData<List<House>>
 }

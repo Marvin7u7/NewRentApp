@@ -1,4 +1,4 @@
-package com.jonareas.rentapp.data.database.dao
+package com.jonareas.rentapp.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
@@ -13,7 +13,7 @@ abstract class FavHouseDao : BaseDao<FavHouse> {
     abstract fun getById(id: Int) : FavHouse
 
     @Query("SELECT * FROM favHouse WHERE user_id = :id")
-    abstract fun getByUserId(id: Int): LiveData<List<FavHouse>>
+    abstract fun getByUserId(id: Int): FavHouse
 
     @Query("SELECT * FROM favHouse")
     abstract fun getAll() : LiveData<List<FavHouse>>

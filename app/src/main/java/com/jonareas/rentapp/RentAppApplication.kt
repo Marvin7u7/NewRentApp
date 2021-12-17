@@ -1,7 +1,7 @@
-package com.jonareas.rentapp.data
+package com.jonareas.rentapp
 
 import android.app.Application
-import com.jonareas.rentapp.data.database.RentAppDatabase
+import com.jonareas.rentapp.data.RentAppDatabase
 
 class RentAppApplication : Application() {
 

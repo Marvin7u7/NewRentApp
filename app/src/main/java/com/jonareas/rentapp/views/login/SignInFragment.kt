@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.jonareas.rentapp.databinding.FragmentSignInBinding
-import com.jonareas.rentapp.views.MainActivity
+import com.jonareas.rentapp.views.main.MainActivity
 
 class SignInFragment : Fragment() {
 

@@ -19,6 +19,8 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         startSplashScreen()
         animateView()
 
@@ -37,7 +39,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun animateView() =
-        binding.apply {
+        binding.run {
             val fadeInTransition = AnimationUtils.loadAnimation(root.context, R.anim.slide_from_bottom)
             textViewRentappName.startAnimation(fadeInTransition)
             textViewRentappAuthor.startAnimation(fadeInTransition)

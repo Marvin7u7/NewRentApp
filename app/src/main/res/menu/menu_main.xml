@@ -7,7 +7,7 @@
         android:title="@string/search_house" />
 
     <item
-        android:id="@+id/nav_fav_houses"
+        android:id="@+id/nav_main_favorites"
         android:icon="@drawable/ic_heart"
         android:title="@string/favorites" />
 
@@ -17,12 +17,12 @@
         android:title="@string/add_house" />
 
     <item
-        android:id="@+id/nav_main_edit_house"
+        android:id="@+id/nav_main_my_houses"
         android:icon="@drawable/ic_edit_house"
-        android:title="@string/edit_house" />
+        android:title="@string/my_houses" />
 
     <item
         android:id="@+id/nav_main_edit_profile"
         android:icon="@drawable/ic_user"
-        android:title="@string/edit_profile" />
+        android:title="@string/my_profile" />
 </menu>

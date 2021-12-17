@@ -1,4 +1,4 @@
-package com.jonareas.rentapp.views
+package com.jonareas.rentapp.views.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,9 +7,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.jonareas.rentapp.R
-import com.jonareas.rentapp.databinding.ActivityLoginBinding
 import com.jonareas.rentapp.databinding.ActivityMainBinding
-import java.util.zip.Inflater
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,10 +25,10 @@ class MainActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(setOf(
             R.id.nav_main_search_house,
+            R.id.nav_main_favorites,
             R.id.nav_main_add_house,
+            R.id.nav_main_my_houses,
             R.id.nav_main_edit_profile,
-            R.id.nav_fav_houses,
-            R.id.nav_my_houses
         ))
 
 

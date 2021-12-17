@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.ProfileFragment">
+    android:scrollbars="vertical"
+    android:scrollbarThumbVertical="?attr/colorOnPrimary"
+    tools:context=".views.main.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <LinearLayout
+        style="@style/LinearLayoutDefault"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:paddingBottom="?attr/actionBarSize">
 
-</FrameLayout>
+        <TextView
+            android:text="@string/edit_profile"
+            android:layout_width="match_parent"
+            style="@style/TextViewDisplay" />
+
+        <include layout="@layout/form_user"/>
+
+        <Button
+            android:id="@+id/button_sign_up"
+            style="@style/ButtonDefault"
+            android:text="@string/save"
+            android:layout_marginBottom="@dimen/margin_standard"/>
+    </LinearLayout>
+</ScrollView>
+
+

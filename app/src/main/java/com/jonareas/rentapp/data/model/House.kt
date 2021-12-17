@@ -10,19 +10,21 @@ data class House(
     @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name = "house_id")
-    val houseId: Int = 0,
-    @ColumnInfo(name = "photo")
-    val photo: String,
-    @ColumnInfo(name = "floors")
-    val floors: Int = 0,
-    @ColumnInfo(name = "rooms")
-    val rooms: Int = 0,
-    @ColumnInfo(name = "bathRooms")
-    val bathRooms: Int = 0,
+    var houseId: Int = 0,
+    @ColumnInfo(name = "title")
+    var title: String,
     @ColumnInfo(name = "description")
-    val description: String,
+    var description: String,
+    @ColumnInfo(name = "photo")
+    var photo: String,
+    @ColumnInfo(name = "floors")
+    var floors: Int = 0,
+    @ColumnInfo(name = "rooms")
+    var rooms: Int = 0,
+    @ColumnInfo(name = "bathRooms")
+    var bathRooms: Int = 0,
     @ColumnInfo(name = "area")
-    val area: Double = 0.0,
+    var area: Double = 0.0,
     @ColumnInfo(name = "parking")
-    val parking: Int = 0
-)
+    var parking: Int = 0
+) : Persistable

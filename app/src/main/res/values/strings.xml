@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">RentApp</string>
     <string name="add_house">Nueva Casa</string>
-    <string name="edit_house">Mis Casas</string>
-    <string name="edit_profile">Mi Perfil</string>
+    <string name="my_houses">Mis Casas</string>
+    <string name="my_profile">Mi Perfil</string>
     <string name="rentapp_author">by Jon Areas</string>
     <string name="rentapp_title">RentApp</string>
     <!-- TODO: Remove or change this placeholder text -->
@@ -24,12 +24,17 @@
     <string name="forgot_password">¿Olvidaste tu contraseña?</string>
     <string name="contact_us">Contáctanos</string>
     <string name="sad_but_true_dad_joke">Aquí pondría las funcionalidades de la RentApp…si tuviera alguna…</string>
-    <string name="rentapp_support_email">mobilesupport@rentapp.com</string>
+    <string name="rentapp_support_email">rentappsupport@jonareas.com</string>
     <string name="rentapp_support_cell_number">(+505) 1800-2020</string>
     <string name="personal_info">Información Personal</string>
     <string name="account_info">Datos de la Cuenta</string>
     <string name="retrieve_your_password">Recupera tu contraseña</string>
     <string name="save">Guardar</string>
     <string name="favorites">Favoritos</string>
+    <string name="edit_profile">Edita tu perfil</string>
+    <string name="description">Descripción</string>
+    <string name="publish_house">Publica una casa</string>
+    <string name="house_info">Datos de la casa</string>
+    <string name="TODO">ALERT : NOT COMPLETED</string>
 
 </resources>

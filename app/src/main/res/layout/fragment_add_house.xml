@@ -1,151 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:scrollbarThumbVertical="?attr/colorOnPrimary"
     tools:context=".views.main.AddHouseFragment">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:orientation="vertical">
+        style="@style/LinearLayoutDefault"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:paddingBottom="?attr/actionBarSize">
 
-        <LinearLayout
+        <TextView
+            android:text="@string/TODO"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="start"
-            android:layout_marginStart="@dimen/margin_small">
+            style="@style/TextViewDisplay" />
 
-            <TextView
-                style="@style/TextViewDisplay"
-                android:text="Describenos tu casa!"
-                android:layout_marginStart="@dimen/none"
-                android:layout_marginTop="@dimen/none"
-                android:textSize="30sp"
-                android:drawableEnd="@drawable/ic_bullhorn_solid"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="start"
-            android:layout_marginStart="@dimen/padding_standard"
-            android:layout_marginTop="@dimen/margin_top_high">
-
-            <Spinner
-                style="@style/SpinnerGlobal"
-                android:gravity="center"
-                android:id="@+id/sp_floors"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="start"
-            android:layout_marginStart="@dimen/padding_standard"
-            android:layout_marginTop="@dimen/padding_toolbar">
-
-            <EditText
-                style="@style/EditTextDefault"
-                android:gravity="center"
-                android:drawableStart="@drawable/ic_rooms"
-                android:layout_marginTop="0dp"
-                android:layout_marginStart="0dp"
-                android:layout_width="200dp"
-                android:hint="Cuartos"
-                android:inputType="number"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="start"
-            android:layout_marginStart="@dimen/padding_standard"
-            android:layout_marginTop="@dimen/padding_toolbar">
-
-            <EditText
-                style="@style/EditTextDefault"
-                android:gravity="center"
-                android:drawableStart="@drawable/ic_bathrooms"
-                android:layout_marginTop="0dp"
-                android:layout_marginStart="0dp"
-                android:layout_width="200dp"
-                android:hint="Baños"
-                android:inputType="number"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="start"
-            android:layout_marginStart="@dimen/padding_standard"
-            android:layout_marginTop="@dimen/padding_toolbar">
-
-            <EditText
-                style="@style/EditTextDefault"
-                android:gravity="center"
-                android:drawableStart="@drawable/ic_edit_solid"
-                android:layout_marginTop="0dp"
-                android:layout_marginStart="0dp"
-                android:layout_width="350dp"
-                android:layout_height="100dp"
-                android:hint="Descripción del inmueble"
-                android:inputType="number"
-                android:background="@drawable/bigger_edit_text_background"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="start"
-            android:layout_marginStart="@dimen/padding_standard"
-            android:layout_marginTop="@dimen/padding_toolbar">
-
-            <EditText
-                style="@style/EditTextDefault"
-                android:gravity="center"
-                android:drawableStart="@drawable/ic_edit_solid"
-                android:layout_marginTop="0dp"
-                android:layout_marginStart="0dp"
-                android:layout_width="350dp"
-                android:hint="Descripción breve del inmueble"
-                android:inputType="number"
-                android:background="@drawable/bigger_edit_text_background"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="start"
-            android:layout_marginStart="@dimen/padding_standard"
-            android:layout_marginTop="@dimen/padding_toolbar">
-
-            <ImageView
-                style="@style/ImageViewForAddHouse"
-                android:background="@drawable/bigger_edit_text_background"
-                android:src="@drawable/ic_house_user_solid"
-                android:paddingBottom="@dimen/margin_top_high"
-                android:paddingTop="@dimen/margin_top_high"/>
-
-            <Button
-                style="@style/ButtonDefault"
-                android:layout_width="250dp"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="10dp"
-                android:text="Seleccionar foto"/>
-        </LinearLayout>
+        <include layout="@layout/form_house"/>
 
         <Button
+            android:id="@+id/button_sign_up"
             style="@style/ButtonDefault"
-            android:text="Guardar"
-            android:layout_marginBottom="15dp"/>
+            android:text="@string/save"
+            android:layout_marginBottom="@dimen/margin_standard"/>
     </LinearLayout>
 </ScrollView>
+
+
+
+

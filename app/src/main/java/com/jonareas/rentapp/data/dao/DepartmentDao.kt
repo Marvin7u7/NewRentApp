@@ -1,4 +1,4 @@
-package com.jonareas.rentapp.data.database.dao
+package com.jonareas.rentapp.data.dao
 
 import androidx.room.Dao
 import androidx.room.Query
@@ -8,6 +8,6 @@ import com.jonareas.rentapp.data.model.Department
 interface DepartmentDao : BaseDao<Department> {
 
     @Query("SELECT departmentName FROM department")
-    suspend fun getAllDepartment() : List<Department>
+    suspend fun getAll() : List<Department>
 
 }

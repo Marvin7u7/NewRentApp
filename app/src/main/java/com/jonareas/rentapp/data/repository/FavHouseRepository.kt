@@ -2,15 +2,14 @@ package com.jonareas.rentapp.data.repository
 
 import androidx.lifecycle.LiveData
 import com.jonareas.rentapp.data.model.FavHouse
+import com.jonareas.rentapp.data.model.House
 
-interface FavHouseRepository {
-    suspend fun saveFavHouse(favHouse: FavHouse)
+interface FavHouseRepository : BaseRepository<FavHouse> {
 
-    suspend fun updateFavHouse(favHouse: FavHouse)
+    fun getById(id : Int) : FavHouse
 
-    suspend fun getAllFavHousesById(id: Int): FavHouse
+    fun getByUserId(userId : Int) : FavHouse
 
-    suspend fun getAllFavHousesByUserId(id: Int): LiveData<List<FavHouse>>
+    fun getAll() : LiveData<List<FavHouse>>
 
-    suspend fun removeFavHouse(favHouse: FavHouse)
 }

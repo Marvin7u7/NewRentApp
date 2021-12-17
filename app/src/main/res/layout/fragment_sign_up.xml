@@ -8,11 +8,8 @@
     tools:context=".views.login.SignUpFragment">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/LinearLayoutDefault"
         android:layout_marginTop="@dimen/margin_standard"
-        android:gravity="center"
-        android:orientation="vertical"
         android:paddingBottom="?attr/actionBarSize">
 
         <TextView
@@ -20,123 +17,12 @@
             android:layout_width="match_parent"
             style="@style/TextViewDisplay" />
 
-        <androidx.cardview.widget.CardView style="@style/CardViewDefault">
-
-           <LinearLayout
-               android:layout_height="match_parent"
-               android:layout_width="match_parent"
-               android:orientation="vertical"
-               >
-               <TextView
-                   style="@style/TextViewDisplayForm"
-                    android:text="@string/personal_info"
-                   />
-
-               <com.google.android.material.textfield.TextInputLayout
-                   style="@style/TextInputLayoutDefault"
-                   app:endIconMode="clear_text">
-
-
-                   <com.google.android.material.textfield.TextInputEditText
-                       android:id="@+id/edit_text_name_sign_up"
-                       style="@style/EditTextDefault"
-                       android:drawableStart="@drawable/ic_name"
-                       android:hint="@string/full_name"
-                       android:inputType="text" />
-
-               </com.google.android.material.textfield.TextInputLayout>
-
-
-               <com.google.android.material.textfield.TextInputLayout
-                   style="@style/TextInputLayoutDefault"
-                   app:endIconMode="clear_text">
-                   <com.google.android.material.textfield.TextInputEditText
-                       android:id="@+id/edit_text_email"
-                       style="@style/EditTextDefault"
-                       android:drawableStart="@drawable/ic_email"
-                       android:hint="@string/email"
-                       />
-               </com.google.android.material.textfield.TextInputLayout>
-
-               <com.google.android.material.textfield.TextInputLayout
-                   style="@style/TextInputLayoutDefault"
-                   app:endIconMode="clear_text">
-
-                   <com.google.android.material.textfield.TextInputEditText
-                       android:id="@+id/edit_text_cellphone_sign_up"
-                       style="@style/EditTextDefault"
-                       android:drawableStart="@drawable/ic_smartphone"
-                       android:hint="@string/cell_number"
-                       android:inputType="number" />
-
-
-               </com.google.android.material.textfield.TextInputLayout>
-
-               <TextView
-                   style="@style/TextViewDisplayForm"
-                   android:text="@string/account_info"
-                   />
-               <com.google.android.material.textfield.TextInputLayout
-                   style="@style/TextInputLayoutDefault"
-                   app:endIconMode="clear_text">
-
-                   <com.google.android.material.textfield.TextInputEditText
-                       android:id="@+id/edit_text_username"
-                       style="@style/EditTextDefault"
-                       android:drawableStart="@drawable/ic_name"
-                       android:hint="@string/username"
-                       android:inputType="text" />
-
-               </com.google.android.material.textfield.TextInputLayout>
-
-               <com.google.android.material.textfield.TextInputLayout
-                   style="@style/TextInputLayoutDefault"
-                   app:endIconMode="password_toggle">
-
-                   <com.google.android.material.textfield.TextInputEditText
-                       android:id="@+id/edit_text_password_sign_up"
-                       style="@style/EditTextPassword"
-                       android:drawableStart="@drawable/ic_security"
-                       android:hint="@string/password"
-                       android:inputType="textPassword"
-                       />
-               </com.google.android.material.textfield.TextInputLayout>
-
-               <com.google.android.material.textfield.TextInputLayout
-                   style="@style/TextInputLayoutDefault"
-                   app:endIconMode="password_toggle"
-                   android:layout_marginBottom="@dimen/margin_standard">
-
-                   <com.google.android.material.textfield.TextInputEditText
-                       android:id="@+id/edit_text_repeat_password_sign_up"
-                       style="@style/EditTextPassword"
-                       android:drawableStart="@drawable/ic_security"
-                       android:hint="@string/repeat_password"
-                       android:inputType="textPassword"
-                       />
-
-               </com.google.android.material.textfield.TextInputLayout>
-
-
-
-           </LinearLayout>
-
-
-        </androidx.cardview.widget.CardView>
+        <include layout="@layout/form_user"/>
 
         <Button
             android:id="@+id/button_sign_up"
             style="@style/ButtonDefault"
-            android:text="@string/sign_up" />
-
-
-                <TextView
-                    android:id="@+id/text_view_sign_in"
-                    style="@style/TextView"
-                    android:text="@string/already_have_account"
-                    android:layout_marginBottom="@dimen/padding_standard"
-                    android:textStyle="bold" />
-
-
+            android:text="@string/sign_up"
+            android:layout_marginBottom="@dimen/padding_standard"/>
     </LinearLayout>
 </ScrollView>

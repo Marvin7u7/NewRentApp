@@ -12,4 +12,4 @@ data class FavHouse(
     var houseId: Int = 0,
     @ColumnInfo(name = "user_id")
     var userId: Int = 0
-)
+) : Persistable

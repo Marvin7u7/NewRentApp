@@ -12,5 +12,5 @@ data class Department (
     val departmentId: Int = 0,
     @ColumnInfo(name = "departmentName")
     val departmentName : String
-){}
+) : Persistable
 

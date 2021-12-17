@@ -22,10 +22,10 @@
 
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_text_name_sign_up"
+                    android:id="@+id/edit_text_title_advertisement"
                     style="@style/EditTextDefault"
-                    android:drawableStart="@drawable/ic_name"
-                    android:hint="@string/full_name"
+                    android:drawableStart="NoTenemosRecursoAun"
+                    android:hint="Titulo Del Anuncio"
                     android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -35,10 +35,10 @@
                 style="@style/TextInputLayoutDefault"
                 app:endIconMode="clear_text">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_text_email"
+                    android:id="@+id/edit_text_description"
                     style="@style/EditTextDefault"
-                    android:drawableStart="@drawable/ic_email"
-                    android:hint="@string/email"
+                    android:drawableStart="NoTenemosRecursos"
+                    android:hint="Descripcion"
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,57 +47,65 @@
                 app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_text_cellphone_sign_up"
+                    android:id="@+id/edit_text_floors"
                     style="@style/EditTextDefault"
-                    android:drawableStart="@drawable/ic_smartphone"
-                    android:hint="@string/cell_number"
+                    android:drawableStart="NoTenemosRecuros"
+                    android:hint="Pisos"
                     android:inputType="number" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                style="@style/TextViewDisplayForm"
-                android:text="@string/house_info"
-                />
+
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/TextInputLayoutDefault"
                 app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_text_username"
+                    android:id="@+id/edit_text_rooms"
                     style="@style/EditTextDefault"
-                    android:drawableStart="@drawable/ic_name"
-                    android:hint="@string/username"
-                    android:inputType="text" />
+                    android:drawableStart="NoTenemosRecursos"
+                    android:hint="Cuartos"
+                    android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/TextInputLayoutDefault"
-                app:endIconMode="password_toggle">
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_text_password_sign_up"
-                    style="@style/EditTextPassword"
-                    android:drawableStart="@drawable/ic_security"
-                    android:hint="@string/password"
-                    android:inputType="textPassword"
-                    />
+                    android:id="@+id/edit_text_bathRooms"
+                    style="@style/EditTextDefault"
+                    android:drawableStart="NoTenemosRecursos"
+                    android:hint="Baños"
+                    android:inputType="number" />
+
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/TextInputLayoutDefault"
-                app:endIconMode="password_toggle"
-                android:layout_marginBottom="@dimen/margin_standard">
+                app:endIconMode="clear_text">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edit_text_repeat_password_sign_up"
-                    style="@style/EditTextPassword"
-                    android:drawableStart="@drawable/ic_security"
-                    android:hint="@string/repeat_password"
-                    android:inputType="textPassword"
-                    />
+                    android:id="@+id/edit_text_area"
+                    style="@style/EditTextDefault"
+                    android:drawableStart="NoTenemosRecursos"
+                    android:hint="Area en mts 2"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutDefault"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text_parking"
+                    style="@style/EditTextDefault"
+                    android:drawableStart="NoTenemosRecursos"
+                    android:hint="Parqueo"
+                    android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

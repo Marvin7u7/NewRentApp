@@ -6,8 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.jonareas.rentapp.R
+import com.jonareas.rentapp.adapter.HouseAdapter
+import com.jonareas.rentapp.databinding.FragmentMyHousesBinding
 
 class MyHousesFragment : Fragment() {
+
+    private lateinit var binding: FragmentMyHousesBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +21,8 @@ class MyHousesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_houses, container, false)
+        binding = FragmentMyHousesBinding.inflate(inflater, container, false)
+
+        return binding.root
     }
 }

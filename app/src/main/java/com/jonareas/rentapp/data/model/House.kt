@@ -15,6 +15,8 @@ data class House(
     var title: String,
     @ColumnInfo(name = "description")
     var description: String,
+    @ColumnInfo(name = "price")
+    var price : Double,
     @ColumnInfo(name = "photo")
     var photo: String,
     @ColumnInfo(name = "floors")
@@ -28,3 +30,4 @@ data class House(
     @ColumnInfo(name = "parking")
     var parking: Int = 0
 ) : Persistable
+

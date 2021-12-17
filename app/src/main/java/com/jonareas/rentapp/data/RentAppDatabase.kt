@@ -11,7 +11,7 @@ import com.jonareas.rentapp.data.model.FavHouse
 import com.jonareas.rentapp.data.model.House
 import com.jonareas.rentapp.data.model.User
 
-const val DATABASE_VERSION = 3
+const val DATABASE_VERSION = 4
 
 @Database(entities = [User::class, House::class, FavHouse::class], version = DATABASE_VERSION)
 abstract class RentAppDatabase : RoomDatabase() {

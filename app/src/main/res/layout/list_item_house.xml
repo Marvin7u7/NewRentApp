@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    style="@style/CardViewDefaultRound"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_tittle">
+
+    <LinearLayout
+        style="@style/LinearLayoutDefault">
+
+        <LinearLayout
+            style="@style/LinearLayoutDefault"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextView"
+                android:id="@+id/text_view_title"
+                tools:text="Here goes the tittle."
+                android:layout_margin="@dimen/none"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayoutDefault"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/ivHouse"
+                style="@style/ImageViewForCardViewDef"
+                android:src="@drawable/ic_house_user_solid"
+                android:layout_marginTop="@dimen/padding_toolbar"/>
+
+            <TextView
+                style="@style/TextView"
+                android:id="@+id/text_view_area"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                tools:text="Area"
+                android:layout_marginTop="@dimen/padding_toolbar"/>
+
+            <TextView
+                style="@style/TextView"
+                android:id="@+id/text_view_price"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                tools:text="Here goes price."
+                android:layout_marginTop="@dimen/padding_toolbar"
+                android:paddingBottom="@dimen/padding_standard"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

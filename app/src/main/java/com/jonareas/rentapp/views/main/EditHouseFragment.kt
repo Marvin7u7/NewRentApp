@@ -12,7 +12,6 @@ import com.jonareas.rentapp.R
 
 class EditHouseFragment : Fragment() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }

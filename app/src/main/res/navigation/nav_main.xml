@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_main_add_house"
         android:name="com.jonareas.rentapp.views.main.AddHouseFragment"
-        android:label="fragment_add_house"
+        android:label="@string/add_house"
         tools:layout="@layout/fragment_add_house" />
     <fragment
         android:id="@+id/nav_main_edit_house"
@@ -18,12 +18,12 @@
     <fragment
         android:id="@+id/nav_main_edit_profile"
         android:name="com.jonareas.rentapp.views.main.ProfileFragment"
-        android:label="fragment_profile"
+        android:label="@string/my_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/nav_main_search_house"
         android:name="com.jonareas.rentapp.views.main.SearchHouseFragment"
-        android:label="fragment_search_house"
+        android:label="@string/search_house"
         tools:layout="@layout/fragment_search_house" >
         <action
             android:id="@+id/action_nav_main_search_house_to_houseDetailsFragment"
@@ -32,12 +32,12 @@
     <fragment
         android:id="@+id/nav_main_favorites"
         android:name="com.jonareas.rentapp.views.main.FavHousesFragment"
-        android:label="fragment_fav_houses"
+        android:label="@string/favorites"
         tools:layout="@layout/fragment_fav_houses" />
     <fragment
         android:id="@+id/nav_main_my_houses"
         android:name="com.jonareas.rentapp.views.main.MyHousesFragment"
-        android:label="fragment_my_houses"
+        android:label="@string/my_houses"
         tools:layout="@layout/fragment_my_houses" >
         <action
             android:id="@+id/action_nav_my_houses_to_nav_main_edit_house"
